@@ -1,0 +1,41 @@
+{
+  "reduction": "STANDARD",
+  "offlinePenalty": 0,
+
+  "badRequest": {
+    "active": true,
+    "period": 5,
+    "modes": [0,1,2,3,4,5,6,7,8,9,10]
+  },
+
+"taxes": {
+    "DE": "function(price) { if(price>2500) return price * 1.00; else return price * 1.18; }",
+	"UK": "function(price) { if(price>2500) return price * 0.90; else return price * 1.00; }",
+    "FR": "function(price) { if(price>2500) return price * 1.30; else return price * 1.33; }",
+	"IT": "function(price) { if(price>2500) return price * 1.10; else return price * 1.13; }",
+    "ES": "function(price) { if(price>2500) return price * 1.70; else return price * 1.75; }",
+	"PL": "function(price) { if(price>2500) return price * 1.05; else return price * 1.10; }",
+    "RO": "function(price) { if(price>2500) return price * 1.00; else return price * 1.03; }",
+	"NL": "function(price) { if(price>2500) return price * 1.30; else return price * 1.20; }",
+    "BE": "function(price) { if(price>2500) return price * 0.95; else return price * 1.00; }",
+	"EL": "function(price) { if(price>2500) return price * 1.10; else return price * 1.12; }",
+    "CZ": "function(price) { if(price>2500) return price * 1.12; else return price * 1.15; }",
+	"PT": "function(price) { if(price>2500) return price * 1.11; else return price * 1.14; }",		
+    "HU": "function(price) { if(price>2500) return price * 1.13; else return price * 1.17; }",
+	"SE": "function(price) { if(price>2500) return price * 1.02; else return price * 1.05; }",
+    "AT": "function(price) { if(price>2000) return price * 1.04; else return price * 1.07; }",
+	"BG": "function(price) { if(price>2000) return price * 1.21; else return price * 1.24; }",
+    "DK": "function(price) { if(price>2000) return price * 1.55; else return price * 1.55; }",
+	"FI": "function(price) { if(price>2000) return price * 1.34; else return price * 1.37; }",		
+	"IE": "function(price) { if(price>2000) return price * 1.13; else return price * 1.15; }",
+    "HR": "function(price) { if(price>2000) return price * 1.11; else return price * 1.17; }",
+	"LT": "function(price) { if(price>2000) return price * 1.09; else return price * 1.13; }",
+    "SI": "function(price) { if(price>2000) return price * 1.12; else return price * 1.15; }",
+	"LV": "function(price) { if(price>2000) return price * 0.98; else return price * 1.00; }",	
+	"EE": "function(price) { if(price>2000) return price * 0.97; else return price * 1.00; }",
+	"CY": "function(price) { if(price>2000) return price * 1.30; else return price * 1.30; }",
+    "LU": "function(price) { if(price>2000) return price * 1.23; else return price * 1.25; }",
+	"MT": "function(price) { if(price>2000) return price * 1.12; else return price * 1.17; }",					
+	"SK": "function(price) { if(price>2000) return price * 1.11; else return price * 1.15; }"
+  }
+}
